@@ -1,0 +1,6 @@
+use_frameworks!
+target 'HSPodLib_Tests' do
+  pod 'HSPodLib', :path => '../'
+  
+  
+end
