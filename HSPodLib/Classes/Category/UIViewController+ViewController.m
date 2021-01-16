@@ -7,7 +7,7 @@
 //
 
 #import "UIViewController+ViewController.h"
-
+#import <objc/runtime.h>
 @implementation UIViewController (ViewController)
 
 -(void)setNavigationBackImage:(UIImage *)image{
