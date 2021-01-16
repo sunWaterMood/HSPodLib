@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HSPodLib'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HSPodLib.'
+  s.summary          = 'HSPodLib second test need'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: must description HSPodLib why? YES!  HSPodLib need test
                        DESC
 
-  s.homepage         = 'https://github.com/1095143828@qq.com/HSPodLib'
+  s.homepage         = 'https://github.com/sunWaterMood/HSPodLib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '1095143828@qq.com' => '1095143828@qq.com' }
-  s.source           = { :git => 'https://github.com/1095143828@qq.com/HSPodLib.git', :tag => s.version.to_s }
+  s.author           = { 'sunWaterMood' => '1095143828@qq.com' }
+  s.source           = { :git => 'https://github.com/sunWaterMood/HSPodLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
