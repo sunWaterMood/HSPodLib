@@ -382,7 +382,7 @@
     NSInteger weekDay = [comp weekday];
     // 获取几天是几号
     NSInteger day = [comp day];
-    NSSLog(@"%ld----%ld",(long)weekDay,(long)day);
+    NSLog(@"%ld----%ld",(long)weekDay,(long)day);
     // 计算当前日期和本周的星期一和星期天相差天数
     long firstDiff,lastDiff = 0;
     //    weekDay = 1;
@@ -394,14 +394,14 @@
     {
         firstDiff = [calendar firstWeekday] - weekDay + 1;
     }
-    NSSLog(@"firstDiff: %ld   lastDiff: %ld",firstDiff,lastDiff);
+    NSLog(@"firstDiff: %ld   lastDiff: %ld",firstDiff,lastDiff);
     
     // 在当前日期(去掉时分秒)基础上加上差的天数
     NSDateComponents *firstDayComp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay  fromDate:nowDate];
     [firstDayComp setDay:day + firstDiff];
     NSDate *firstDayOfWeek = [calendar dateFromComponents:firstDayComp];
     
-    NSSLog(@"=======%@",firstDayComp);
+    NSLog(@"=======%@",firstDayComp);
     
     //时间转时间戳的方法:
     NSInteger timeSp = [[NSNumber numberWithDouble:[firstDayOfWeek timeIntervalSince1970]] integerValue]*1000;
@@ -415,7 +415,7 @@
     NSInteger weekDay = [comp weekday];
     // 获取今天是几号
     NSInteger day = [comp day];
-    NSSLog(@"%ld----%ld",(long)weekDay,(long)day);
+    NSLog(@"%ld----%ld",(long)weekDay,(long)day);
     // 计算当前日期和本周的星期一和星期天相差天数
     long firstDiff,lastDiff = 0;
     //    weekDay = 1;
@@ -427,14 +427,14 @@
     {
         firstDiff = [calendar firstWeekday] - weekDay + 1;
     }
-    NSSLog(@"firstDiff: %ld   lastDiff: %ld",firstDiff,lastDiff);
+    NSLog(@"firstDiff: %ld   lastDiff: %ld",firstDiff,lastDiff);
     
     // 在当前日期(去掉时分秒)基础上加上差的天数
     NSDateComponents *firstDayComp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay  fromDate:nowDate];
     [firstDayComp setDay:day + firstDiff];
     NSDate *firstDayOfWeek = [calendar dateFromComponents:firstDayComp];
     
-    NSSLog(@"=======%@",firstDayComp);
+    NSLog(@"=======%@",firstDayComp);
     
     NSDateFormatter *dateFormat=[[NSDateFormatter alloc]init];
     [dateFormat setDateFormat:@"yyyy-MM-dd"];
@@ -449,7 +449,7 @@
     NSInteger weekDay = [comp weekday];
     // 获取几天是几号
     NSInteger day = [comp day];
-    NSSLog(@"%ld----%ld",(long)weekDay,(long)day);
+    NSLog(@"%ld----%ld",(long)weekDay,(long)day);
     
     // 计算当前日期和本周的星期一和星期天相差天数
     long firstDiff = 0,lastDiff;
@@ -462,7 +462,7 @@
     {
         lastDiff = 9 - weekDay;
     }
-    NSSLog(@"firstDiff: %ld   lastDiff: %ld",firstDiff,lastDiff);
+    NSLog(@"firstDiff: %ld   lastDiff: %ld",firstDiff,lastDiff);
     
     // 在当前日期(去掉时分秒)基础上加上差的天数
     NSDateComponents *lastDayComp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay   fromDate:nowDate];
@@ -482,7 +482,7 @@
     NSInteger weekDay = [comp weekday];
     // 获取几天是几号
     NSInteger day = [comp day];
-    NSSLog(@"%ld----%ld",(long)weekDay,(long)day);
+    NSLog(@"%ld----%ld",(long)weekDay,(long)day);
 
     // 计算当前日期和本周的星期一和星期天相差天数
     long firstDiff = 0,lastDiff;
@@ -495,7 +495,7 @@
     {
         lastDiff = 9 - weekDay;
     }
-    NSSLog(@"firstDiff: %ld   lastDiff: %ld",firstDiff,lastDiff);
+    NSLog(@"firstDiff: %ld   lastDiff: %ld",firstDiff,lastDiff);
 
     // 在当前日期(去掉时分秒)基础上加上差的天数
     NSDateComponents *lastDayComp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay   fromDate:nowDate];
