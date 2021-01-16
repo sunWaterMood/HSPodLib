@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HSPodLib'
-  s.version          = '0.4.0'
+  s.version          = '0.6.0'
   s.summary          = 'HSPodLib second test need'
 
 # This description is used to generate tags and improve search results.
@@ -29,8 +29,14 @@ TODO: must description HSPodLib why? YES!  HSPodLib need test
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+   # subspec的定义
+  s.subspec 'Category' do |category|
+    # 创建subspec的时候文件夹必须要有文件，不然就会报错 验证不通过
+    category.source_files = 'HSPodLib/Classes/Category/**/*'
+    category.public_header_files = 'HSPodLib/Classes/HSPodLib/**/*.h'
+  end
 
-  s.source_files = 'HSPodLib/Classes/**/*'
+  #s.source_files = 'HSPodLib/Classes/**/*'
   
   # s.resource_bundles = {
   #   'HSPodLib' => ['HSPodLib/Assets/*.png']
